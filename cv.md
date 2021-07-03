@@ -1,6 +1,6 @@
 # This is a test CV
 # **Yuri An**
-![Ape](https://i.imgflip.com/1yq0pj.jpg)
+![ape](https://i.imgflip.com/1yq0pj.jpg)
 ---
 
 *Mobile phone: +79288140366*
@@ -15,7 +15,7 @@ At the moment I can make simple web-sites using HTML/CSS and add some functional
 
 ***
 
-I finished a responsive web design course in [freecodecamp](freecodecamp.org)
+I finished a responsive web design course in [freecodecamp](https://www.freecodecamp.org)
 
 ***
 
