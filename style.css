@@ -1,0 +1,96 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  border: blue dashed 1px;
+}
+
+footer {
+  border: pink solid 1px;
+  min-height: 3rem;
+}
+
+ul {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+a {
+  color: blueviolet;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  text-align: center;
+}
+
+.wrapper {
+  width: 500px;
+  margin: 0 auto;
+}
+
+.photo-contacts {
+  border: red dotted 1px;
+  min-height: 12rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.photo {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+.photo-description {
+  font-size: 0.8rem;
+  text-align: center;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.intro {
+  min-height: 6rem;
+  border: dotted 1px black;
+}
+
+.vacation {
+  font-size: 2.1rem;
+  margin-top: 1rem;
+}
+
+.myName {
+  margin: 1rem 0 1rem;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+}
+
+.frontend,
+.backend,
+.tools,
+.other {
+  width: 80%;
+  border: dotted 1px black;
+  align-self: center;
+}
+
+.skills-box {
+  display: flex;
+  justify-content: center;
+}
+
+.education,
+.languages,
+.about {
+  width: 80%;
+  margin: 0 auto;
+}
