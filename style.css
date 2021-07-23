@@ -9,13 +9,22 @@ main {
 }
 
 footer {
+  width: 90%;
+  margin: 0 auto;
   border: pink solid 1px;
-  min-height: 3rem;
+  min-height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 ul {
   list-style-type: none;
   text-decoration: none;
+}
+
+ul li img {
+  height: 1rem;
 }
 
 a {
@@ -37,8 +46,10 @@ h4 {
 .photo-contacts {
   border: red dotted 1px;
   min-height: 12rem;
+  width: 90%;
+  margin: 0 auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -57,6 +68,8 @@ h4 {
 
 .intro {
   min-height: 6rem;
+  width: 90%;
+  margin: 0 auto;
   border: dotted 1px black;
 }
 
@@ -78,7 +91,7 @@ h4 {
 .backend,
 .tools,
 .other {
-  width: 80%;
+  width: 90%;
   border: dotted 1px black;
   align-self: center;
 }
@@ -88,9 +101,14 @@ h4 {
   justify-content: center;
 }
 
+.skills-box-list,
+.skills-box-level {
+  min-width: 25%;
+}
+
 .education,
 .languages,
 .about {
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
 }
