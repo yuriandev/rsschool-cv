@@ -2,25 +2,16 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 main {
   border: blue dashed 1px;
 }
 
-footer {
-  width: 90%;
-  margin: 0 auto;
-  border: pink solid 1px;
-  min-height: 4rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
 ul {
   list-style-type: none;
-  text-decoration: none;
+  line-height: 1.4rem;
 }
 
 ul li img {
@@ -28,7 +19,7 @@ ul li img {
 }
 
 a {
-  color: blueviolet;
+  color: #5f10a8;
 }
 
 h1,
@@ -38,24 +29,48 @@ h4 {
   text-align: center;
 }
 
+details {
+  margin-top: 0.5rem;
+}
+summary {
+  text-align: center;
+  font-weight: bold;
+}
 .wrapper {
   width: 500px;
   margin: 0 auto;
 }
 
-.photo-contacts {
-  border: red dotted 1px;
-  min-height: 12rem;
+.skills-header,
+.examples-header,
+.languages-header,
+.education-header,
+.about-header {
+  margin: 1rem 0 0.2rem;
+}
+
+.photo-contacts,
+.intro,
+.examples,
+.education,
+.languages,
+.about,
+.footer {
   width: 90%;
   margin: 0 auto;
+  border: dotted 1px black;
+}
+
+.photo-contacts {
+  min-height: 12rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .photo {
-  height: 150px;
-  width: 150px;
+  height: 10rem;
+  width: 10rem;
   border-radius: 50%;
 }
 
@@ -64,13 +79,6 @@ h4 {
   text-align: center;
   font-style: italic;
   font-weight: lighter;
-}
-
-.intro {
-  min-height: 6rem;
-  width: 90%;
-  margin: 0 auto;
-  border: dotted 1px black;
 }
 
 .vacation {
@@ -91,6 +99,7 @@ h4 {
 .backend,
 .tools,
 .other {
+  padding: 0.7rem 0;
   width: 90%;
   border: dotted 1px black;
   align-self: center;
@@ -106,9 +115,12 @@ h4 {
   min-width: 25%;
 }
 
-.education,
-.languages,
-.about {
-  width: 90%;
-  margin: 0 auto;
+.certificates-header {
+  margin-top: 0.5rem;
+}
+.footer {
+  min-height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
