@@ -7,6 +7,8 @@
 
 main {
   border: blue dashed 1px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 ul {
@@ -37,8 +39,9 @@ summary {
   font-weight: bold;
 }
 .wrapper {
-  width: 500px;
+  min-width: 30rem;
   margin: 0 auto;
+  border: dotted 1px black;
 }
 
 .skills-header,
@@ -49,28 +52,29 @@ summary {
   margin: 1rem 0 0.2rem;
 }
 
-.photo-contacts,
+/* .photo-contacts,
 .intro,
 .examples,
 .education,
 .languages,
 .about,
 .footer {
-  width: 90%;
+  width: 31rem;
   margin: 0 auto;
   border: dotted 1px black;
-}
+} */
 
 .photo-contacts {
   min-height: 12rem;
+  padding: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .photo {
-  height: 10rem;
-  width: 10rem;
+  height: 11rem;
+  width: 11rem;
   border-radius: 50%;
 }
 
@@ -83,11 +87,11 @@ summary {
 
 .vacation {
   font-size: 2.1rem;
-  margin-top: 1rem;
+  margin-top: 0.5rem;
 }
 
 .myName {
-  margin: 1rem 0 1rem;
+  margin: 0.7rem 0 1rem;
 }
 
 .skills {
@@ -100,7 +104,7 @@ summary {
 .tools,
 .other {
   padding: 0.7rem 0;
-  width: 90%;
+  width: 100%;
   border: dotted 1px black;
   align-self: center;
 }
@@ -112,7 +116,7 @@ summary {
 
 .skills-box-list,
 .skills-box-level {
-  min-width: 25%;
+  min-width: 40%;
 }
 
 .certificates-header {
@@ -123,4 +127,51 @@ summary {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (min-width: 40rem) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+  }
+
+  h3 {
+    text-align: left;
+  }
+  .wrapper {
+    width: 60rem;
+  }
+  .photo-contacts {
+    background: linear-gradient(35deg, #1136d8, #f00ce4);
+    color: azure;
+    flex-direction: column;
+    justify-content: stretch;
+    border: dotted 1px orange;
+    grid-row: 1/3;
+  }
+
+  .contacts-container {
+    margin-top: 2rem;
+  }
+  .main-content,
+  .footer {
+    padding: 0 1rem;
+  }
+
+  .skills {
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .frontend,
+  .backend,
+  .tools,
+  .other {
+    width: 20rem;
+  }
+
+  .footer {
+    margin-top: 1rem;
+    grid-column: 2/3;
+  }
 }
