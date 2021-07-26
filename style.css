@@ -8,6 +8,7 @@
 main {
   width: 100%;
   margin: 0 auto;
+  padding: 1rem;
 }
 
 ul {
@@ -36,6 +37,12 @@ details {
 summary {
   text-align: center;
   font-weight: bold;
+}
+
+iframe {
+  border: 0;
+  display: block;
+  margin: 1rem auto;
 }
 
 .wrapper {
@@ -122,6 +129,7 @@ summary {
 
 @media (min-width: 40rem) {
   main {
+    padding: 0;
     display: grid;
     grid-template-columns: 1fr 3fr;
   }
