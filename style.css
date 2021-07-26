@@ -6,7 +6,6 @@
 }
 
 main {
-  border: blue dashed 1px;
   width: 100%;
   margin: 0 auto;
 }
@@ -39,17 +38,9 @@ summary {
   font-weight: bold;
 }
 
-iframe {
-  display: block;
-  margin: 1rem auto;
-  width: 560px;
-  height: 315px;
-  border: 0;
-}
 .wrapper {
   min-width: 30rem;
   margin: 0 auto;
-  border: dotted 1px black;
 }
 
 .skills-header,
@@ -100,7 +91,6 @@ iframe {
 .other {
   padding: 0.7rem 0;
   width: 100%;
-  border: dotted 1px black;
   align-self: center;
 }
 
@@ -147,7 +137,6 @@ iframe {
     color: azure;
     flex-direction: column;
     justify-content: stretch;
-    border: dotted 1px orange;
     grid-row: 1/3;
   }
 
