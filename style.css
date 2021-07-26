@@ -38,6 +38,14 @@ summary {
   text-align: center;
   font-weight: bold;
 }
+
+iframe {
+  display: block;
+  margin: 1rem auto;
+  width: 560px;
+  height: 315px;
+  border: 0;
+}
 .wrapper {
   min-width: 30rem;
   margin: 0 auto;
@@ -52,20 +60,8 @@ summary {
   margin: 1rem 0 0.2rem;
 }
 
-/* .photo-contacts,
-.intro,
-.examples,
-.education,
-.languages,
-.about,
-.footer {
-  width: 31rem;
-  margin: 0 auto;
-  border: dotted 1px black;
-} */
-
 .photo-contacts {
-  min-height: 12rem;
+  min-height: 13rem;
   padding: 1rem;
   display: flex;
   justify-content: space-between;
@@ -73,9 +69,8 @@ summary {
 }
 
 .photo {
-  height: 11rem;
-  width: 11rem;
-  border-radius: 50%;
+  height: 13rem;
+  object-fit: scale-down;
 }
 
 .photo-description {
@@ -127,6 +122,12 @@ summary {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.git {
+  background-color: #d2d3f3;
+}
+.rs {
+  background-color: yellow;
 }
 
 @media (min-width: 40rem) {

@@ -10,15 +10,16 @@
   <body>
     <div class="wrapper">
       <main>
-        <section class="photo-contacts">
+        <aside class="photo-contacts">
           <div class="photo-container">
             <figure>
               <img
                 class="photo"
-                src="/img/MyPhoto.jpg"
+                src="img/MyPhoto.jpg"
                 alt="MyPhoto"
                 title="Happy junior"
               />
+              <figcaption class="photo-description">Happy junior</figcaption>
             </figure>
           </div>
           <div class="contacts-container">
@@ -29,7 +30,7 @@
               <li>Skype: Yurikan82</li>
             </ul>
           </div>
-        </section>
+        </aside>
         <section class="main-content">
           <div class="intro">
             <h1 class="vacation">Junior JavaScript developer</h1>
@@ -240,18 +241,24 @@
             <article class="about-text">
               <h3 class="about-header">About me</h3>
               <p>
-                I have an economic education. Almost 10 years I was an
-                individual entrepreneur in agriculture. After some time I
-                decided to change my field of activity for something new,
-                interesting and creative that will inspire and encourage me.
-                Since childhood I liked computers, so I chose programming. Now
-                I'm studying and improving my skills in web-development.
+                I'm a "switcher". I have an economic education and I was an
+                individual entrepreneur. Now I'm studying and improving my
+                skills in web-development. Some day I wish to be a full-stack
+                JavaScript developer, but currently I'm discovering the frontend
+                first. A little more information you can see in my video below.
               </p>
+              <iframe
+                src="https://youtu.be/F_ERcu2MFcc"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
             </article>
           </div>
+          <div class="hobbies"></div>
         </section>
         <footer class="footer">
-          <span
+          <span class="git"
             ><a href="https://github.com/yuriandev"
               ><img
                 src="icons/github.svg"
@@ -259,14 +266,14 @@
                 height="40"
                 width="40" /></a
           ></span>
-          <span
+          <span><time>2021</time></span>
+          <span class="rs"
             ><a href="https://rs.school/js/" target="_blank"
               ><img
                 src="icons/rs_school_js.svg"
                 alt="RSSchool-Logo"
                 height="40" /></a
           ></span>
-          <span><time>2021</time></span>
         </footer>
       </main>
     </div>
