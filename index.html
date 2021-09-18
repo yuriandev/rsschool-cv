@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My CV</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="#" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="navbar">
+          <span>Yuri An</span>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a class="nav-link" href="#welcome">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section id="welcome" class="welcome">
+          <h1>Hello!</h1>
+          <article class="welcome__article">
+            <figure>
+              <img src="images/photo.jpeg" alt="My photo" />
+              <figcaption>
+                <h3>I'm Iurii An</h3>
+              </figcaption>
+            </figure>
+            <h2>Junior JavaScript developer</h2>
+            <p>This is my CV landing page</p>
+          </article>
+        </section>
+        <section id="skills" class="skills">
+          <h2>My skills</h2>
+          <h3>Current skills</h3>
+          <div class="skills__table">
+            <ul class="skills__list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            <div class="skills__levels">
+              <div class="level">
+                <span></span>
+              </div>
+              <div class="level">
+                <span></span>
+              </div>
+              <div class="level">
+                <span></span>
+              </div>
+            </div>
+          </div>
+          <h3>Future skills</h3>
+          <ul class="skills-container">
+            <li>TypeScript</li>
+            <li>React.js</li>
+            <li>Next.js</li>
+            <li>Nest.js</li>
+          </ul>
+          <h3>Languages</h3>
+          <ul class="skills-container">
+            <li>English (B1)</li>
+            <li>Russian (native)</li>
+            <li>Korean (A1)</li>
+          </ul>
+        </section>
+        <section id="portfolio" class="portfolio">
+          <h2>My study projects</h2>
+          <div class="slider-container">
+            <button class="left"><i class="fas fa-chevron-left"></i></button>
+            <div class="slider">
+              <figure class="slide active">
+                <figcaption><h4>Custom video player</h4></figcaption>
+                <img
+                  src="images/projects/project-video-player.jpg"
+                  alt="Screenshot of a video player project"
+                />
+                <p>HTML5, CSS3, JavaScript</p>
+              </figure>
+              <figure class="slide">
+                <figcaption><h4>Vertical/horizontal slider</h4></figcaption>
+                <img
+                  src="images/projects/project-slider.jpg"
+                  alt="Screenshot of a slider project"
+                />
+                <p>HTML5, CSS3, JavaScript</p>
+              </figure>
+            </div>
+
+            <button class="right"><i class="fas fa-chevron-right"></i></button>
+          </div>
+          <div class="example">
+            <h3>Example of code</h3>
+            <p>Factorial of number</p>
+            <pre><code>
+              function factorial(n) {
+                if (n < 0) return null;
+                if (n === 0) return 1;
+                return n * factorial(--n);
+              }
+          </code></pre>
+          </div>
+        </section>
+        <section id="education" class="education">
+          <h2>My education</h2>
+          <h3>Graduated</h3>
+          <ul>
+            <li>2021 RS School: JS/Frontend. Stage 0</li>
+            <li>2020 FreeCodeCamp: Responsive web design</li>
+            <li>2005 Financial Academy under the Government of Russia</li>
+          </ul>
+          <h3>Current courses</h3>
+          <ul>
+            <li>RS School: JS/Frontend. Stage 1</li>
+            <li>FreeCodeCamp: JS Algorithms and Data Structures</li>
+          </ul>
+          <div class="cert-container">
+            <h3>Certificates</h3>
+            <figure class="cert-box">
+              <figcaption>RS School</figcaption>
+              <a href="https://app.rs.school/certificate/v6ym10ke">
+                <img
+                  src="images/Cert/RS-Cert0.jpg"
+                  alt="RS School certificate stage 0"
+              /></a>
+            </figure>
+            <figure class="cert-box">
+              <figcaption>FreeCodeCamp</figcaption>
+              <a
+                href="https://www.freecodecamp.org/certification/fcc94ed5d3e-8586-4cc9-85dd-05daec8058d7/responsive-web-design"
+              >
+                <img
+                  src="images/Cert/fc.jpg"
+                  alt="FreeCodeCamp Web Certificate"
+              /></a>
+            </figure>
+          </div>
+        </section>
+        <section id="about" class="about">
+          <h2>Some words about me</h2>
+          <div>
+            <p>
+              I'm a switcher who is changing his life and field of activity for
+              web-development. My main goal is to help people and their
+              businesses to solve the problems in the web.
+            </p>
+
+            <iframe
+              src="https://www.youtube.com/embed/HwVh8pmOot4"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </section>
+        <section id="contacts" class="contacts">
+          <h3>Contacts:</h3>
+          <ul class="contacts-list">
+            <li>Telegram: @Yurian126</li>
+            <li>Discord: Yurik#6596</li>
+            <li>Skype: Yurikan82</li>
+            <li>Email: yuriandev@gmail.com</li>
+            <li><a href="https://github.com/yuriandev">Github</a></li>
+            <li></li>
+          </ul>
+        </section>
+      </main>
+      <footer>
+        <div class="footer-icons">
+          <div class="github-codewars-icons">
+            <a href="https://github.com/yuriandev"
+              ><img
+                width="35"
+                src="images/icons/github-icon.svg"
+                alt="Github icon"
+            /></a>
+            <a href="https://www.codewars.com/users/yuriandev"
+              ><img
+                width="35"
+                src="images/icons/codewars.svg"
+                alt="Codewars icon"
+            /></a>
+          </div>
+
+          <span>2021</span>
+          <a href="https://rs.school/js/"
+            ><img
+              width="100"
+              src="images/icons/rs_school_js.svg"
+              alt="RS School icon"
+          /></a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
