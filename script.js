@@ -37,9 +37,7 @@ function nextSlide(a) {
   showSlider("from-left");
 }
 function changeSliderItem(a) {
-  console.log("change currentSliderIndex", currentSliderIndex);
   currentSliderIndex = (a + sliders.length) % sliders.length;
-  console.log("new currentSliderIndex", currentSliderIndex);
 }
 function hideSlider(direction) {
   isShowed = false;
@@ -61,7 +59,6 @@ function showSlider(direction) {
 leftButton.addEventListener(
   "click",
   function () {
-    console.log("Pushed left button", currentSliderIndex);
     if (isShowed) {
       previousSlide(currentSliderIndex);
     }
@@ -72,7 +69,6 @@ leftButton.addEventListener(
 rightButton.addEventListener(
   "click",
   function () {
-    console.log("Pushed right button", currentSliderIndex);
     if (isShowed) {
       nextSlide(currentSliderIndex);
     }

@@ -28,7 +28,7 @@
     <div class="container">
       <header>
         <nav class="navbar">
-          <span>Yuri An</span>
+          <span class="logo">Yuri An</span>
           <ul class="nav-menu">
             <li class="nav-item">
               <a class="nav-link" href="#welcome">Home</a>
@@ -37,13 +37,13 @@
               <a class="nav-link" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
+              <a class="nav-link" href="#portfolio">Examples</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#education">Education</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About me</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contacts">Contacts</a>
@@ -63,103 +63,122 @@
             <figure>
               <img src="images/photo.jpeg" alt="My photo" />
               <figcaption>
-                <h3>I'm Iurii An</h3>
+                <h3>I'm Yuri</h3>
               </figcaption>
             </figure>
             <h2>Junior JavaScript developer</h2>
-            <p>This is my CV landing page</p>
           </article>
         </section>
         <section id="skills" class="skills">
           <h2>My skills</h2>
           <h3>Current skills</h3>
-          <div class="skills__table">
-            <ul class="skills__list">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
+          <div class="skills-box">
+            <ul class="hard-skills">
+              <li class="skill">html</li>
+              <li class="skill">css</li>
+              <li class="skill">javascript</li>
+              <li class="skill">git</li>
+              <li class="skill">figma</li>
+              <li class="skill">node.js</li>
             </ul>
-            <div class="skills__levels">
-              <div class="level">
-                <span></span>
+            <div class="skills-levels">
+              <div class="level-box">
+                <div class="level html">80%</div>
               </div>
-              <div class="level">
-                <span></span>
+              <div class="level-box">
+                <div class="level css">70%</div>
               </div>
-              <div class="level">
-                <span></span>
+              <div class="level-box">
+                <div class="level js">50%</div>
+              </div>
+              <div class="level-box">
+                <div class="level git">50%</div>
+              </div>
+              <div class="level-box">
+                <div class="level figma">20%</div>
+              </div>
+              <div class="level-box">
+                <div class="level node">15%</div>
               </div>
             </div>
           </div>
-          <h3>Future skills</h3>
-          <ul class="skills-container">
-            <li>TypeScript</li>
-            <li>React.js</li>
-            <li>Next.js</li>
-            <li>Nest.js</li>
-          </ul>
           <h3>Languages</h3>
-          <ul class="skills-container">
+          <ul class="language-list">
             <li>English (B1)</li>
             <li>Russian (native)</li>
             <li>Korean (A1)</li>
           </ul>
         </section>
         <section id="portfolio" class="portfolio">
-          <h2>My study projects</h2>
+          <h2>Examples</h2>
+          <h3>Example of code</h3>
+          <div class="example">
+            <p>Factorial of number</p>
+            <pre><code>
+function factorial(n) {
+ if (n &#10094; 0) return null;
+ if (n === 0) return 1;
+ return n * factorial(n-1);
+}
+          </code></pre>
+          </div>
+          <h3>Study projects</h3>
           <div class="slider-container">
             <button class="left"><i class="fas fa-chevron-left"></i></button>
             <div class="slider">
               <figure class="slide active">
                 <figcaption><h4>Custom video player</h4></figcaption>
-                <img
-                  src="images/projects/project-video-player.jpg"
-                  alt="Screenshot of a video player project"
-                />
+                <a
+                  href="https://rolling-scopes-school.github.io/yuriandev-JSFEPRESCHOOL/custom-video-player/"
+                  target="_blank"
+                >
+                  <img
+                    src="images/projects/project-video-player.jpg"
+                    alt="Screenshot of a video player project"
+                /></a>
+
                 <p>HTML5, CSS3, JavaScript</p>
               </figure>
               <figure class="slide">
                 <figcaption><h4>Vertical/horizontal slider</h4></figcaption>
-                <img
-                  src="images/projects/project-slider.jpg"
-                  alt="Screenshot of a slider project"
-                />
+                <a
+                  href="https://rolling-scopes-school.github.io/yuriandev-JSFEPRESCHOOL/vertical-slider/"
+                  target="_blank"
+                >
+                  <img
+                    src="images/projects/project-slider.jpg"
+                    alt="Screenshot of a slider project"
+                /></a>
                 <p>HTML5, CSS3, JavaScript</p>
               </figure>
             </div>
 
-            <button class="right"><i class="fas fa-chevron-right"></i></button>
-          </div>
-          <div class="example">
-            <h3>Example of code</h3>
-            <p>Factorial of number</p>
-            <pre><code>
-              function factorial(n) {
-                if (n < 0) return null;
-                if (n === 0) return 1;
-                return n * factorial(--n);
-              }
-          </code></pre>
+            <button class="right buttons">
+              <i class="fas fa-chevron-right"></i>
+            </button>
           </div>
         </section>
         <section id="education" class="education">
           <h2>My education</h2>
           <h3>Graduated</h3>
-          <ul>
+          <ul class="edu-lists">
             <li>2021 RS School: JS/Frontend. Stage 0</li>
             <li>2020 FreeCodeCamp: Responsive web design</li>
             <li>2005 Financial Academy under the Government of Russia</li>
           </ul>
           <h3>Current courses</h3>
-          <ul>
+          <ul class="edu-lists">
             <li>RS School: JS/Frontend. Stage 1</li>
             <li>FreeCodeCamp: JS Algorithms and Data Structures</li>
           </ul>
+          <h3>Certificates</h3>
           <div class="cert-container">
-            <h3>Certificates</h3>
             <figure class="cert-box">
               <figcaption>RS School</figcaption>
-              <a href="https://app.rs.school/certificate/v6ym10ke">
+              <a
+                href="https://app.rs.school/certificate/v6ym10ke"
+                target="_blank"
+              >
                 <img
                   src="images/Cert/RS-Cert0.jpg"
                   alt="RS School certificate stage 0"
@@ -169,6 +188,7 @@
               <figcaption>FreeCodeCamp</figcaption>
               <a
                 href="https://www.freecodecamp.org/certification/fcc94ed5d3e-8586-4cc9-85dd-05daec8058d7/responsive-web-design"
+                target="_blank"
               >
                 <img
                   src="images/Cert/fc.jpg"
@@ -209,13 +229,13 @@
       <footer>
         <div class="footer-icons">
           <div class="github-codewars-icons">
-            <a href="https://github.com/yuriandev"
+            <a href="https://github.com/yuriandev" target="_blank"
               ><img
                 width="35"
                 src="images/icons/github-icon.svg"
                 alt="Github icon"
             /></a>
-            <a href="https://www.codewars.com/users/yuriandev"
+            <a href="https://www.codewars.com/users/yuriandev" target="_blank"
               ><img
                 width="35"
                 src="images/icons/codewars.svg"
@@ -224,7 +244,7 @@
           </div>
 
           <span>2021</span>
-          <a href="https://rs.school/js/"
+          <a href="https://rs.school/js/" target="_blank"
             ><img
               width="100"
               src="images/icons/rs_school_js.svg"
