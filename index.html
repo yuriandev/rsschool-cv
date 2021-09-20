@@ -4,281 +4,257 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>An Yuri</title>
+    <title>My CV</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/default.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="#" />
+    <script src="script.js" defer></script>
   </head>
   <body>
-    <div class="wrapper">
+    <div class="container">
+      <header>
+        <nav class="navbar">
+          <span class="logo">Yuri An</span>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a class="nav-link" href="#welcome">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Examples</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </header>
       <main>
-        <aside class="photo-contacts">
-          <div class="photo-container">
+        <section id="welcome" class="welcome">
+          <h1>Hello!</h1>
+          <article class="welcome__article">
             <figure>
-              <img
-                class="photo"
-                src="img/MyPhoto.jpg"
-                alt="MyPhoto"
-                title="Happy junior"
-              />
-              <figcaption class="photo-description">Happy junior</figcaption>
+              <img src="images/photo.jpeg" alt="My photo" />
+              <figcaption>
+                <h3>I'm Yuri</h3>
+              </figcaption>
+            </figure>
+            <h2>Junior JavaScript developer</h2>
+          </article>
+        </section>
+        <section id="skills" class="skills">
+          <h2>My skills</h2>
+          <h3>Current skills</h3>
+          <div class="skills-box">
+            <ul class="hard-skills">
+              <li class="skill">html</li>
+              <li class="skill">css</li>
+              <li class="skill">javascript</li>
+              <li class="skill">git</li>
+              <li class="skill">figma</li>
+              <li class="skill">node.js</li>
+            </ul>
+            <div class="skills-levels">
+              <div class="level-box">
+                <div class="level html">80%</div>
+              </div>
+              <div class="level-box">
+                <div class="level css">70%</div>
+              </div>
+              <div class="level-box">
+                <div class="level js">50%</div>
+              </div>
+              <div class="level-box">
+                <div class="level git">50%</div>
+              </div>
+              <div class="level-box">
+                <div class="level figma">20%</div>
+              </div>
+              <div class="level-box">
+                <div class="level node">15%</div>
+              </div>
+            </div>
+          </div>
+          <h3>Languages</h3>
+          <ul class="language-list">
+            <li>English (B1)</li>
+            <li>Russian (native)</li>
+            <li>Korean (A1)</li>
+          </ul>
+        </section>
+        <section id="portfolio" class="portfolio">
+          <h2>Examples</h2>
+          <h3>Example of code</h3>
+          <div class="example">
+            <p>Factorial of number</p>
+            <pre><code>
+function factorial(n) {
+ if (n &#10094; 0) return null;
+ if (n === 0) return 1;
+ return n * factorial(n-1);
+}
+          </code></pre>
+          </div>
+          <h3>Study projects</h3>
+          <div class="slider-container">
+            <button class="left"><i class="fas fa-chevron-left"></i></button>
+            <div class="slider">
+              <figure class="slide active">
+                <figcaption><h4>Video player</h4></figcaption>
+                <a
+                  href="https://rolling-scopes-school.github.io/yuriandev-JSFEPRESCHOOL/custom-video-player/"
+                  target="_blank"
+                >
+                  <img
+                    src="images/projects/project-video-player.jpg"
+                    alt="Screenshot of a video player project"
+                /></a>
+                <p>Simple custom UI of video player with hotkeys</p>
+                <p>Used: HTML5, CSS3, JS</p>
+              </figure>
+              <figure class="slide">
+                <figcaption><h4>Slider</h4></figcaption>
+                <a
+                  href="https://rolling-scopes-school.github.io/yuriandev-JSFEPRESCHOOL/vertical-slider/"
+                  target="_blank"
+                >
+                  <img
+                    src="images/projects/project-slider.jpg"
+                    alt="Screenshot of a slider project"
+                /></a>
+                <p>Slider with horizontal and vertical directions</p>
+                <p>Used: HTML5, CSS3, JS</p>
+              </figure>
+            </div>
+
+            <button class="right buttons">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </section>
+        <section id="education" class="education">
+          <h2>My education</h2>
+          <h3>Graduated</h3>
+          <ul class="edu-lists">
+            <li>2021 RS School: JS/Frontend. Stage 0</li>
+            <li>2020 FreeCodeCamp: Responsive web design</li>
+            <li>2005 Financial Academy under the Government of Russia</li>
+          </ul>
+          <h3>Current courses</h3>
+          <ul class="edu-lists">
+            <li>RS School: JS/Frontend. Stage 1</li>
+            <li>FreeCodeCamp: JS Algorithms and Data Structures</li>
+          </ul>
+          <h3>Certificates</h3>
+          <div class="cert-container">
+            <figure class="cert-box">
+              <figcaption>RS School</figcaption>
+              <a
+                href="https://app.rs.school/certificate/v6ym10ke"
+                target="_blank"
+              >
+                <img
+                  src="images/Cert/RS-Cert0.jpg"
+                  alt="RS School certificate stage 0"
+              /></a>
+            </figure>
+            <figure class="cert-box">
+              <figcaption>FreeCodeCamp</figcaption>
+              <a
+                href="https://www.freecodecamp.org/certification/fcc94ed5d3e-8586-4cc9-85dd-05daec8058d7/responsive-web-design"
+                target="_blank"
+              >
+                <img
+                  src="images/Cert/fc.jpg"
+                  alt="FreeCodeCamp Web Certificate"
+              /></a>
             </figure>
           </div>
-          <div class="contacts-container">
-            <h3 class="contacts-header">Contacts</h3>
-            <ul>
-              <li>Phone: +7-968-271-73-73</li>
-              <li>Email: yuriandev@gmail.com</li>
-              <li>Skype: Yurikan82</li>
-            </ul>
-          </div>
-        </aside>
-        <section class="main-content">
-          <div class="intro">
-            <h1 class="vacation">Junior JavaScript developer</h1>
-            <h2 class="myName">An Yuri Olegovich</h2>
-          </div>
-          <h3 class="skills-header">My Skills</h3>
-          <div class="skills">
-            <div class="frontend">
-              <h4>Frontend</h4>
-              <div class="skills-box">
-                <div class="skills-box-list">
-                  <ul>
-                    <li>JavaScript</li>
-                    <li>TypeScript</li>
-                    <li>React.js</li>
-                    <li>Next.js</li>
-                  </ul>
-                </div>
-                <div class="skills-box-level">
-                  <ul>
-                    <li>
-                      <img src="icons/level_2.png" alt="stars level 2" />
-                    </li>
-                    <li>
-                      <img src="icons/level_1.png" alt="stars level 1" />
-                    </li>
-                    <li>
-                      <img src="icons/level_1.png" alt="stars level 1" />
-                    </li>
-                    <li>
-                      <img src="icons/level_1.png" alt="stars level 1" />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="backend">
-              <h4>Backend</h4>
-              <div class="skills-box">
-                <div class="skills-box-list">
-                  <ul>
-                    <li>Node.js</li>
-                    <li>Express.js</li>
-                    <li>Nest.js</li>
-                    <li>Docker</li>
-                  </ul>
-                </div>
-                <div class="skills-box-level">
-                  <ul>
-                    <li>
-                      <img src="icons/level_2.png" alt="stars level 2" />
-                    </li>
-                    <li>
-                      <img src="icons/level_2.png" alt="stars level 2" />
-                    </li>
-                    <li>
-                      <img src="icons/level_1.png" alt="stars level 1" />
-                    </li>
-                    <li>
-                      <img src="icons/level_1.png" alt="stars level 1" />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="tools">
-              <h4>Tools</h4>
-              <div class="skills-box">
-                <div class="skills-box-list">
-                  <ul>
-                    <li>Git and GitHub</li>
-                    <li>Webpack</li>
-                    <li>Gulp</li>
-                    <li>Figma</li>
-                  </ul>
-                </div>
-                <div class="skills-box-level">
-                  <ul>
-                    <li>
-                      <img src="icons/level_2.png" alt="stars level 2" />
-                    </li>
-                    <li>
-                      <img src="icons/level_1.png" alt="stars level 1" />
-                    </li>
-                    <li>
-                      <img src="icons/level_1.png" alt="stars level 1" />
-                    </li>
-                    <li>
-                      <img src="icons/level_1.png" alt="stars level 1" />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div class="other">
-              <h4>Other</h4>
-              <div class="skills-box">
-                <div class="skills-box-list">
-                  <ul>
-                    <li>MongoDB</li>
-                    <li>Bootstrap</li>
-                    <li>CMS Strapi</li>
-                    <li>Jest</li>
-                  </ul>
-                </div>
-                <div class="skills-box-level">
-                  <ul>
-                    <li>
-                      <img src="icons/level_1.png" alt="stars level 1" />
-                    </li>
-                    <li>
-                      <img src="icons/level_1.png" alt="stars level 1" />
-                    </li>
-                    <li>
-                      <img src="icons/level_1.png" alt="stars level 1" />
-                    </li>
-                    <li>
-                      <img src="icons/level_1.png" alt="stars level 1" />
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <h3 class="examples-header">Study projects</h3>
-          <div class="examples">
-            <ul>
-              <li>
-                <a href="https://github.com/yuriandev/Form-validator"
-                  >Form validator</a
-                >
-              </li>
-              <li>
-                <a href="https://github.com/yuriandev/Menu-slider-modal-DOM"
-                  >Hamburger menu and modal window</a
-                >
-              </li>
-              <li>
-                <a href="https://github.com/yuriandev/Exchange-rate-calculator"
-                  >Exchange rate</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <h3 class="languages-header">Languages</h3>
-          <div class="languages">
-            <ul>
-              <li>Russian (native)</li>
-              <li>English (B1 level)</li>
-            </ul>
-          </div>
-          <h3 class="education-header">Education</h3>
-          <div class="education">
-            <h4>Graduated</h4>
-            <ul>
-              <li>2005 Financial Academy under the Government of Russia</li>
-            </ul>
-
-            <h4 class="certificates-header">Certificates</h4>
-            <ul>
-              <li>
-                <a
-                  href="https://www.freecodecamp.org/certification/fcc94ed5d3e-8586-4cc9-85dd-05daec8058d7/responsive-web-design"
-                  >2020 freecodecamp.org: Responsive web design</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://assets.htmlacademy.ru/certificates/intensive/26/233557.pdf?1475905245&_ga=2.32937786.563828326.1620821427-1700225162.1620821427"
-                  >2016 HTML Academy: HTML & CSS basic course</a
-                >
-              </li>
-            </ul>
-            <details>
-              <summary>Currently a student of the courses</summary>
-              <ul>
-                <li>
-                  <a href="https://rs.school/js/"
-                    >RSS School JavaScript/Front-end</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.udemy.com/course/the-complete-web-development-bootcamp/"
-                    >Udemy: The Complete 2021 Web Development Bootcamp</a
-                  >
-                </li>
-                <li>
-                  <a href="https://www.udemy.com/course/webdeveloper/"
-                    >Udemy: WEB Developer 2021</a
-                  >
-                </li>
-                <li>
-                  <a href="https://www.udemy.com/course/javascript_full/"
-                    >Udemy: The complete JavaScript + React course - From
-                    scratch to results</a
-                  >
-                </li>
-              </ul>
-            </details>
-          </div>
-
-          <div class="about">
-            <article class="about-text">
-              <h3 class="about-header">About me</h3>
-              <p>
-                I'm a "switcher". I have an economic education and I was an
-                individual entrepreneur. Now I'm studying and improving my
-                skills in web-development. Some day I wish to be a full-stack
-                JavaScript developer, but currently I'm discovering the frontend
-                first. A little more information you can see in my
-                <a href="https://youtu.be/F_ERcu2MFcc">video</a>.
-              </p>
-              <iframe
-                width="560"
-                height="315"
-                src="https://www.youtube.com/embed/F_ERcu2MFcc"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </article>
-          </div>
-          <div class="hobbies"></div>
         </section>
-        <footer class="footer">
-          <span class="git"
-            ><a href="https://github.com/yuriandev"
-              ><img
-                src="icons/github.svg"
-                alt="github-icon"
-                height="40"
-                width="40" /></a
-          ></span>
-          <span><time>2021</time></span>
-          <span class="rs"
-            ><a href="https://rs.school/js/" target="_blank"
-              ><img
-                src="icons/rs_school_js.svg"
-                alt="RSSchool-Logo"
-                height="40" /></a
-          ></span>
-        </footer>
+        <section id="about" class="about">
+          <h2>About me</h2>
+          <div class="video-box">
+            <p>
+              I'm a switcher who is changing his life and field of activity for
+              web-development. I wish to be a full-stack JavaScript developer,
+              but currently I'm discovering frontend first. My main goal is to
+              help people and their businesses to resolve problems on the web.
+            </p>
+            
+            <iframe
+              src="https://www.youtube.com/embed/sbNzbOuWw1Q"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <h3>Contacts:</h3>
+          <ul class="contacts-list">
+            <li>Telegram: @Yurian126</li>
+            <li>Discord: Yurik#6596</li>
+            <li>Skype: Yurikan82</li>
+            <li>Email: yuriandev@gmail.com</li>
+            <li><a href="https://github.com/yuriandev">Github</a></li>
+            <li></li>
+          </ul>
+        </section>
       </main>
+      <footer>
+        <div class="footer-icons">
+          <div class="github-codewars-icons">
+            <a
+              class="github-icon"
+              href="https://github.com/yuriandev"
+              target="_blank"
+              ><img
+                width="35"
+                src="images/icons/github-icon.svg"
+                alt="Github icon"
+            /></a>
+            <a
+              class="cw-icon"
+              href="https://www.codewars.com/users/yuriandev"
+              target="_blank"
+              ><img
+                width="35"
+                src="images/icons/codewars.svg"
+                alt="Codewars icon"
+            /></a>
+          </div>
+
+          <span>2021</span>
+          <a class="rs-icon" href="https://rs.school/js/" target="_blank"
+            ><img
+              width="100"
+              src="images/icons/rs_school_js.svg"
+              alt="RS School icon"
+          /></a>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
