@@ -77,8 +77,8 @@ rightButton.addEventListener(
 );
 
 console.log(`
-Task: https://github.com/rolling-scopes-school/tasks/blob/master/tasks/cv/cv.md
-Done 20.09.2021 / deadline 21.09.2021
+Task: https://github.com/rolling-scopes-school/tasks/blob/master/tasks/cv/html-css-git.md
+Done 06.09.2022 / deadline 28.09.2022
 Score: 150 / 160
 - [x] вёрстка валидная +10
 - [x] вёрстка семантическая, 8 семантических тегов + 4 заголовковб 12*2=24.  +20
