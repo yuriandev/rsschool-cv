@@ -312,7 +312,11 @@ pre {
   align-items: center;
   background-image: linear-gradient(135deg, #5efce8 10%, #736efe 100%);
 }
-
+.github-icon,
+.cw-icon {
+  display: flex;
+  align-items: center;
+}
 @keyframes left {
   from {
     left: 0%;
